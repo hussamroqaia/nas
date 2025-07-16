@@ -1,0 +1,569 @@
+:root {
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Amatic SC", sans-serif;
+  --nav-font: "Inter", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.font-amatic {
+  font-family: var(--heading-font);
+}
+.font-inter {
+  font-family: var(--nav-font);
+}
+.font-roboto {
+  font-family: var(--default-font);
+}
+.light-background {
+  background-color: #f2f2f2;
+  --surface-color: #ffffff;
+}
+section {
+  padding: 60px 0;
+}
+.margin-30 {
+  margin-bottom: 30px;
+}
+
+.main-titles {
+  padding-bottom: 60px;
+  .section-title {
+    color: #212529;
+    opacity: 0.6;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+  .fs-heading {
+    font-size: 3rem;
+  }
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #212529 !important;
+  opacity: 0.4 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #3265AD !important;
+}
+.custom-swiper {
+  .swiper-slide {
+    height: 550px !important;
+  }
+}
+.pb-10 {
+  padding-bottom: 60px;
+}
+.nav-link.active {
+  border-bottom: 2px solid #3265AD;
+}
+@keyframes up-and-down {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+.custom-marker {
+  background-color: #265597;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+// // // // // //
+header {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  .yummy-logo {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  a {
+    color: #4e4e59;
+  }
+
+  .btn-book {
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 26px;
+  }
+  .btn-book:hover {
+    background-color: #4a5970;
+  }
+}
+
+.hero {
+  .animate-img {
+    animation: up-and-down 2s ease-in-out infinite alternate-reverse both;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 64px;
+    color: #37373f;
+    font-style: normal;
+  }
+  p {
+    opacity: 0.8;
+  }
+  .buttons {
+    a:first-child {
+      padding: 10px 28px;
+      border-radius: 50px;
+      letter-spacing: 1;
+    }
+  }
+}
+
+.about {
+  .lorem {
+    color: #212529;
+    opacity: 0.6;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      i {
+        font-size: 20px;
+      }
+      margin-bottom: 13px;
+    }
+  }
+  .box-a {
+    border: 4px solid #636669;
+  }
+}
+
+.why-us {
+  .col-md-4 {
+    h3 {
+      font-size: 34px;
+      margin-bottom: 35px;
+    }
+    p {
+      margin-bottom: 35px;
+    }
+    .learn-more-button {
+      border-radius: 50px !important;
+      background-color: #19355d !important;
+      border: none !important;
+      padding: 8px 40px !important;
+    }
+    .learn-more-button:hover {
+      background-color: #7892b8;
+      color: #19355d;
+      transition: all 0.2s;
+    }
+  }
+  .why-us-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fcf3f3;
+    padding: 40px;
+    i {
+      font-size: 32px;
+      position: relative;
+      top: -23px;
+      right: 15px;
+    }
+  }
+  .why-us-icon:hover {
+    background-color: #7892B8;
+    i {
+      color: #19355d !important;
+    }
+    transition: all 0.2s;
+  }
+  .pa-icon {
+    font-size: 15px;
+    color: #212529b3;
+  }
+}
+
+.stats {
+  background-image: url("https://www.nas.sy/assets/img/parallax/speed-of-light.jpg");
+  width:100%; height:100%; object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(10, 12, 22, 0.602);
+  background-blend-mode: color;
+  padding: 120px 0;
+}
+
+.menu {
+  .menu-title {
+    color: #212529;
+    opacity: 0.7;
+    font-size: 14px;
+    padding-top: 3.75rem;
+  }
+  .menu-subtitle {
+    font-size: 48px;
+  }
+  .menu-img {
+    margin-bottom: 15px;
+  }
+  .plate-name {
+    margin-bottom: 5px;
+  }
+  .ingredients {
+    font-size: 16px;
+    color: #21252980;
+    margin-bottom: 5px;
+  }
+}
+
+.testimonials {
+  .swiper {
+    .swiper-wrapper {
+      .slide {
+        .row {
+          .col-lg-6 {
+            border-left: 3px solid #3265AD;
+            padding: 10px 40px;
+            margin: 15px 0px 15px 60px;
+            .quote-icon-start {
+              color: #497dc6;
+              font-size: 26px;
+              position: relative;
+              top: 0px;
+              right: 5px;
+            }
+            .quote-icon-end {
+              display: inline-block;
+              color: #497dc6;
+              font-size: 26px;
+              position: relative;
+              top: 10px;
+              right: -5px;
+              transform: scale(-1, -1);
+            }
+            h3 {
+              color: #37373f;
+            }
+            h4 {
+              color: #21252999;
+              font-size: 14px;
+            }
+            .star-color {
+              color: #2E62AB;
+            }
+          }
+
+          .col-lg-2 {
+            img {
+              padding-bottom: 30px;
+            }
+          }
+        }
+      }
+    }
+    .swiper-pagination {
+      margin-bottom: -14px !important;
+    }
+  }
+}
+
+.events {
+  .mySwiper {
+    height: 600px;
+
+    .swiper-wrapper {
+      .swiper-slide {
+        width: 33.4% !important;
+      }
+      .swiper-slide:nth-child(1) {
+        background-image: url(https://www.nas.sy/assets/img/478e4-3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(28, 29, 34, 0.602);
+        background-blend-mode: color;
+        height: 600px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+
+        margin-right: 1px !important;
+
+        .price {
+          span {
+            border-bottom: #3265AD solid 2px;
+          }
+        }
+        p {
+          opacity: 0.8;
+        }
+      }
+      .swiper-slide:nth-child(2) {
+        background-image: url(https://www.nas.sy/assets/img/06993-0-.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(10, 12, 22, 0.602);
+        background-blend-mode: color;
+        height: 600px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        margin-right: 1px !important;
+
+        .price {
+          span {
+            border-bottom: #3265AD solid 2px;
+          }
+        }
+        p {
+          opacity: 0.8;
+        }
+      }
+      .swiper-slide:nth-child(3) {
+        background-image: url(https://www.nas.sy/assets/img/ae2ca-5.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(10, 12, 22, 0.602);
+        background-blend-mode: color;
+        height: 600px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        margin-right: 1px !important;
+
+        .price {
+          span {
+            border-bottom: #3265AD solid 2px;
+          }
+        }
+        p {
+          opacity: 0.8;
+        }
+      }
+      .swiper-slide:nth-child(4) {
+        background-image: url(https://www.nas.sy/assets/img/06993-0-.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(10, 12, 22, 0.602);
+        background-blend-mode: color;
+        height: 600px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+
+        .price {
+          span {
+            border-bottom: #ce1212 solid 2px;
+          }
+        }
+        p {
+          opacity: 0.8;
+        }
+      }
+    }
+    @media (max-width: 1200px) {
+      .swiper-wrapper {
+        .swiper-slide {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+.chefs {
+  .container {
+    .row {
+      .col-lg-4 {
+        .chef-card {
+          .wave-container {
+            position: relative;
+            overflow: hidden;
+            max-width: 100%;
+          }
+
+          .chef-image {
+            width: 100%;
+            height: 402px;
+            object-fit: cover;
+            
+          }
+
+          .wave-divider {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            line-height: 0;
+          }
+
+          .wave-divider svg {
+            display: block;
+            width: 100%;
+            height: 100px;
+          }
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.1);
+          .chef-contant {
+            padding: 10px 15px 20px;
+            h4 {
+              color: #37373f;
+              margin-bottom: 5px;
+              font-size: 20px;
+            }
+            span {
+              font-size: 14px;
+              color: #21252980;
+            }
+            p {
+              font-size: 14px;
+              color: #212529b3;
+              margin: 16px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.book-a-table {
+  .container:nth-child(2) {
+    .img-left {
+      background-image: url(https://www.nas.sy/assets/img/parallax/e11dd-51818-c9b5e-hoasting.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 400px;
+    }
+    form {
+      width: 100%;
+      padding: 30px;
+      input {
+        margin-top: 24px;
+        border-radius: 0;
+        padding: 10px 15px;
+        font-size: 14px;
+        border: 1px solid rgb(216, 206, 206) !important;
+      }
+      textarea {
+        padding: 10px 15px;
+      }
+    }
+  }
+}
+
+.gallery {
+  .swiper {
+    @media (width < 1200px) {
+      .swiper-wrapper {
+        .swiper-slide {
+          width: 50% !important;
+        }
+      }
+    }
+    @media (width < 768px) {
+      .swiper-wrapper {
+        .swiper-slide {
+          width: 100% !important;
+        }
+      }
+    }
+    .swiper-slide {
+      .d-flex {
+        height: 550px;
+      }
+    }
+    .swiper-pagination {
+      margin-bottom: -10px;
+    }
+  }
+}
+
+.contact {
+  .contact-card {
+    padding: 20px 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.1);
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      color: white;
+      i {
+        color: white;
+        position: relative;
+        top: 8px;
+        left: 14px;
+        font-size: 22px;
+      }
+    }
+    h3 {
+      font-size: 20px;
+      color: #212529b3;
+    }
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+  form {
+    padding: 30px;
+    margin-top: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.1);
+    input {
+      border-radius: 0;
+      padding: 10px 15px;
+      font-size: 14px;
+      border: 1px solid rgb(216, 206, 206) !important;
+    }
+    textarea {
+      padding: 10px 15px;
+    }
+    button {
+      padding: 10px 30px;
+      transition: 0.4s;
+      border-radius: 50px;
+    }
+  }
+}
+
+footer {
+  .icon {
+    margin-right: 15px;
+    font-size: 24px;
+    line-height: 0;
+  }
+  h4 {
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 14px;
+    margin: 0;
+  }
+  .nav-links {
+    a {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #8f8f92;
+      border-radius: 50%;
+      margin-right: 10px;
+      i {
+        color: #8f8f92;
+      }
+    }
+  }
+  .footer-footer {
+    border-top: 1px solid #414142;
+    padding-top: 20px;
+    p:nth-child(2) {
+      font-size: 13px;
+      margin-top: 5px;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,508 @@
+:root {
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Amatic SC", sans-serif;
+  --nav-font: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.font-amatic {
+  font-family: var(--heading-font);
+}
+
+.font-inter {
+  font-family: var(--nav-font);
+}
+
+.font-roboto {
+  font-family: var(--default-font);
+}
+
+.light-background {
+  background-color: #f2f2f2;
+  --surface-color: #ffffff;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.margin-30 {
+  margin-bottom: 30px;
+}
+
+.main-titles {
+  padding-bottom: 60px;
+}
+.main-titles .section-title {
+  color: #212529;
+  opacity: 0.6;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+.main-titles .fs-heading {
+  font-size: 3rem;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #212529 !important;
+  opacity: 0.4 !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #212529 !important;
+  opacity: 0.4 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #3265AD !important;
+}
+
+.custom-swiper .swiper-slide {
+  height: 550px !important;
+}
+
+.pb-10 {
+  padding-bottom: 60px;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid #3265AD;
+}
+
+@keyframes up-and-down {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+.custom-marker {
+  background-color: #265597;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+header {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+header .yummy-logo {
+  font-size: 30px;
+  line-height: 36px;
+}
+header a {
+  color: #4e4e59;
+}
+header .btn-book {
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 26px;
+}
+header .btn-book:hover {
+  background-color: #4a5970;
+}
+
+.hero .animate-img {
+  animation: up-and-down 2s ease-in-out infinite alternate-reverse both;
+}
+.hero h1 {
+  font-weight: 700;
+  font-size: 64px;
+  color: #37373f;
+  font-style: normal;
+}
+.hero p {
+  opacity: 0.8;
+}
+.hero .buttons a:first-child {
+  padding: 10px 28px;
+  border-radius: 50px;
+  letter-spacing: 1;
+}
+
+.about .lorem {
+  color: #212529;
+  opacity: 0.6;
+}
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+.about ul li {
+  margin-bottom: 13px;
+}
+.about ul li i {
+  font-size: 20px;
+}
+.about .box-a {
+  border: 4px solid #636669;
+}
+
+.why-us .col-md-4 h3 {
+  font-size: 34px;
+  margin-bottom: 35px;
+}
+.why-us .col-md-4 p {
+  margin-bottom: 35px;
+}
+.why-us .col-md-4 .learn-more-button {
+  border-radius: 50px !important;
+  background-color: #19355d !important;
+  border: none !important;
+  padding: 8px 40px !important;
+}
+.why-us .col-md-4 .learn-more-button:hover {
+  background-color: #7892b8;
+  color: #19355d;
+  transition: all 0.2s;
+}
+.why-us .why-us-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fcf3f3;
+  padding: 40px;
+}
+.why-us .why-us-icon i {
+  font-size: 32px;
+  position: relative;
+  top: -23px;
+  right: 15px;
+}
+.why-us .why-us-icon:hover {
+  background-color: #7892B8;
+  transition: all 0.2s;
+}
+.why-us .why-us-icon:hover i {
+  color: #19355d !important;
+}
+.why-us .pa-icon {
+  font-size: 15px;
+  color: rgba(33, 37, 41, 0.7019607843);
+}
+
+.stats {
+  background-image: url("https://www.nas.sy/assets/img/parallax/speed-of-light.jpg");
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(10, 12, 22, 0.602);
+  background-blend-mode: color;
+  padding: 120px 0;
+}
+
+.menu .menu-title {
+  color: #212529;
+  opacity: 0.7;
+  font-size: 14px;
+  padding-top: 3.75rem;
+}
+.menu .menu-subtitle {
+  font-size: 48px;
+}
+.menu .menu-img {
+  margin-bottom: 15px;
+}
+.menu .plate-name {
+  margin-bottom: 5px;
+}
+.menu .ingredients {
+  font-size: 16px;
+  color: rgba(33, 37, 41, 0.5019607843);
+  margin-bottom: 5px;
+}
+
+.testimonials .swiper .swiper-wrapper .slide .row .col-lg-6 {
+  border-left: 3px solid #3265AD;
+  padding: 10px 40px;
+  margin: 15px 0px 15px 60px;
+}
+.testimonials .swiper .swiper-wrapper .slide .row .col-lg-6 .quote-icon-start {
+  color: #497dc6;
+  font-size: 26px;
+  position: relative;
+  top: 0px;
+  right: 5px;
+}
+.testimonials .swiper .swiper-wrapper .slide .row .col-lg-6 .quote-icon-end {
+  display: inline-block;
+  color: #497dc6;
+  font-size: 26px;
+  position: relative;
+  top: 10px;
+  right: -5px;
+  transform: scale(-1, -1);
+}
+.testimonials .swiper .swiper-wrapper .slide .row .col-lg-6 h3 {
+  color: #37373f;
+}
+.testimonials .swiper .swiper-wrapper .slide .row .col-lg-6 h4 {
+  color: rgba(33, 37, 41, 0.6);
+  font-size: 14px;
+}
+.testimonials .swiper .swiper-wrapper .slide .row .col-lg-6 .star-color {
+  color: #2E62AB;
+}
+.testimonials .swiper .swiper-wrapper .slide .row .col-lg-2 img {
+  padding-bottom: 30px;
+}
+.testimonials .swiper .swiper-pagination {
+  margin-bottom: -14px !important;
+}
+
+.events .mySwiper {
+  height: 600px;
+}
+.events .mySwiper .swiper-wrapper .swiper-slide {
+  width: 33.4% !important;
+}
+.events .mySwiper .swiper-wrapper .swiper-slide:nth-child(1) {
+  background-image: url(https://www.nas.sy/assets/img/478e4-3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(28, 29, 34, 0.602);
+  background-blend-mode: color;
+  height: 600px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin-right: 1px !important;
+}
+.events .mySwiper .swiper-wrapper .swiper-slide:nth-child(1) .price span {
+  border-bottom: #3265AD solid 2px;
+}
+.events .mySwiper .swiper-wrapper .swiper-slide:nth-child(1) p {
+  opacity: 0.8;
+}
+.events .mySwiper .swiper-wrapper .swiper-slide:nth-child(2) {
+  background-image: url(https://www.nas.sy/assets/img/06993-0-.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(10, 12, 22, 0.602);
+  background-blend-mode: color;
+  height: 600px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin-right: 1px !important;
+}
+.events .mySwiper .swiper-wrapper .swiper-slide:nth-child(2) .price span {
+  border-bottom: #3265AD solid 2px;
+}
+.events .mySwiper .swiper-wrapper .swiper-slide:nth-child(2) p {
+  opacity: 0.8;
+}
+.events .mySwiper .swiper-wrapper .swiper-slide:nth-child(3) {
+  background-image: url(https://www.nas.sy/assets/img/ae2ca-5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(10, 12, 22, 0.602);
+  background-blend-mode: color;
+  height: 600px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin-right: 1px !important;
+}
+.events .mySwiper .swiper-wrapper .swiper-slide:nth-child(3) .price span {
+  border-bottom: #3265AD solid 2px;
+}
+.events .mySwiper .swiper-wrapper .swiper-slide:nth-child(3) p {
+  opacity: 0.8;
+}
+.events .mySwiper .swiper-wrapper .swiper-slide:nth-child(4) {
+  background-image: url(https://www.nas.sy/assets/img/06993-0-.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(10, 12, 22, 0.602);
+  background-blend-mode: color;
+  height: 600px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.events .mySwiper .swiper-wrapper .swiper-slide:nth-child(4) .price span {
+  border-bottom: #ce1212 solid 2px;
+}
+.events .mySwiper .swiper-wrapper .swiper-slide:nth-child(4) p {
+  opacity: 0.8;
+}
+@media (max-width: 1200px) {
+  .events .mySwiper .swiper-wrapper .swiper-slide {
+    width: 100% !important;
+  }
+}
+
+.chefs .container .row .col-lg-4 .chef-card {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.1);
+}
+.chefs .container .row .col-lg-4 .chef-card .wave-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+.chefs .container .row .col-lg-4 .chef-card .chef-image {
+  width: 100%;
+  height: 402px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.chefs .container .row .col-lg-4 .chef-card .wave-divider {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 0;
+}
+.chefs .container .row .col-lg-4 .chef-card .wave-divider svg {
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+.chefs .container .row .col-lg-4 .chef-card .chef-contant {
+  padding: 10px 15px 20px;
+}
+.chefs .container .row .col-lg-4 .chef-card .chef-contant h4 {
+  color: #37373f;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.chefs .container .row .col-lg-4 .chef-card .chef-contant span {
+  font-size: 14px;
+  color: rgba(33, 37, 41, 0.5019607843);
+}
+.chefs .container .row .col-lg-4 .chef-card .chef-contant p {
+  font-size: 14px;
+  color: rgba(33, 37, 41, 0.7019607843);
+  margin: 16px 0;
+}
+
+.book-a-table .container:nth-child(2) .img-left {
+  background-image: url(https://www.nas.sy/assets/img/parallax/e11dd-51818-c9b5e-hoasting.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+.book-a-table .container:nth-child(2) form {
+  width: 100%;
+  padding: 30px;
+}
+.book-a-table .container:nth-child(2) form input {
+  margin-top: 24px;
+  border-radius: 0;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid rgb(216, 206, 206) !important;
+}
+.book-a-table .container:nth-child(2) form textarea {
+  padding: 10px 15px;
+}
+
+@media (width < 1200px) {
+  .gallery .swiper .swiper-wrapper .swiper-slide {
+    width: 50% !important;
+  }
+}
+@media (width < 768px) {
+  .gallery .swiper .swiper-wrapper .swiper-slide {
+    width: 100% !important;
+  }
+}
+.gallery .swiper .swiper-slide .d-flex {
+  height: 550px;
+}
+.gallery .swiper .swiper-pagination {
+  margin-bottom: -10px;
+}
+
+.contact .contact-card {
+  padding: 20px 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.1);
+}
+.contact .contact-card .contact-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+}
+.contact .contact-card .contact-icon i {
+  color: white;
+  position: relative;
+  top: 8px;
+  left: 14px;
+  font-size: 22px;
+}
+.contact .contact-card h3 {
+  font-size: 20px;
+  color: rgba(33, 37, 41, 0.7019607843);
+}
+.contact .contact-card p {
+  font-size: 14px;
+  margin: 0;
+}
+.contact form {
+  padding: 30px;
+  margin-top: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.1);
+}
+.contact form input {
+  border-radius: 0;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid rgb(216, 206, 206) !important;
+}
+.contact form textarea {
+  padding: 10px 15px;
+}
+.contact form button {
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+footer .icon {
+  margin-right: 15px;
+  font-size: 24px;
+  line-height: 0;
+}
+footer h4 {
+  margin-bottom: 15px;
+}
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
+footer .nav-links a {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #8f8f92;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+footer .nav-links a i {
+  color: #8f8f92;
+}
+footer .footer-footer {
+  border-top: 1px solid #414142;
+  padding-top: 20px;
+}
+footer .footer-footer p:nth-child(2) {
+  font-size: 13px;
+  margin-top: 5px;
+}
+footer .footer-footer p:nth-child(2) a {
+  text-decoration: none;
+}/*# sourceMappingURL=styles.css.map */
